@@ -100,6 +100,39 @@ int main() // it tell the compiler that this is the main function of the program
     int y = 3;
     float div = (float)x / y; // Explicit type casting 
     cout << "the value of div(Explicit type casting) is: "<< div << endl;  
+    /*
+    Arithmetic opretors
+    1. add 
+    2. sub
+    3. mul 
+    4. div
+    5. mod
+    */
+    int num1 = 1, num2 = 2;
+    cout<<"The num are: "<< num1<< num2<< endl;
+    cout << "sum is: "<< num1 + num2<< endl;
+    cout << "diff is: "<< num2 - num1<< endl;
+    cout << "Product is: "<< num1 * num2<< endl;
+    cout<< "Div is: "<< num1/num2<< endl;
+    cout << "Mod is: "<< num1 % num2;
+
+
+    /*
+    Relational Operators
+    1. gteater then >
+    2. less then <
+    3. greater then equal >=
+    4. less then equal <=
+    */
+
+    int value1 = 20, value2 = 30, value3 = 40, value4 = 20;
+
+    bool flag = (value1 > value2);
+    cout << "vlaues are: "<< value1<<"\t"<< value2<<"\t"<< value3<< "\t"<< value4<< endl;
+    cout << "value1 > vlaue2: "<< flag<< endl;
+
+
+
 
 
     return 0; // it tells the compiler that the program has ended successfully.
