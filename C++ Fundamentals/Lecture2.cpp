@@ -164,7 +164,7 @@ int main()
             4444
 */
 
-
+/*
 int main() 
 {
 
@@ -179,3 +179,304 @@ int main()
     }
 
 }
+*/
+
+/*
+      3)    1234
+            1234
+            1234
+*/
+
+/*
+int main()
+{
+    int n, i, j;
+    cout <<"Enter the Number: ";
+    cin >> n;
+
+    for (i=1; i<=n; i++){
+        for(j=1; j<=n; j++){
+            cout << j << " ";
+        }
+        cout << endl;
+
+    }
+
+}
+*/
+
+/*
+      4)    4321
+            4321
+            4321
+*/
+/*
+int main()
+{
+    int n, i, j;
+    cout <<"Enter the Number: ";
+    cin >> n;
+
+    for (i=1; i<=n; i++){
+        for(j=1; j<=n; j++){
+            cout << n-j+1 << " ";
+        }
+        cout << endl;
+
+    }
+
+}
+*/
+
+/*
+      5)    123
+            456
+            789
+*/
+/*
+int main()
+{
+    int n = 3, i, j, k = 1 ;
+    cout <<"Enter the Number: ";
+    cin >> n;
+
+    for (i=1; i<=n; i++){
+        for(j=1; j<=n; j++){
+            cout << k << " ";
+            k++; 
+        }
+        cout << endl;
+
+    }
+
+}
+*/
+
+/*
+      6)    *
+            **
+            ***
+            ****
+*/
+/*
+int main()
+{
+    int n, i=1, j=1;
+    cout<<"Enter the number: ";
+    cin >> n;
+    while(i<=n){
+        j=1;
+        while(j<=i){
+            cout<< "* ";
+            j++;
+        }
+        cout << endl;
+        i++;
+
+    }
+}
+*/
+
+/*
+      7)    1
+            22
+            333
+            4444
+*/
+/*
+int main()
+{
+    int n, i, j;
+    cout<< "Enter the value of N: ";
+    cin >> n;
+    for(i=1; i<=n; i++){
+        for(j=1; j<=i; j++){
+            cout << i << " ";
+        }
+        cout << endl; 
+    }
+}
+*/
+
+
+/*
+      8)    1
+            2 3
+            4 5 6
+            7 8 9 10
+*/
+
+/*
+int main()
+{
+    int n, i, j, count = 1;
+    cout<< "Enter the value of N: ";
+    cin >> n;
+    for(i=1; i<=n; i++){
+        for(j=1; j<=i; j++){
+            cout << count << " ";
+            count++;
+        }
+        cout << endl; 
+    }
+}
+*/
+
+
+
+/*
+      9)    1
+            2 3
+            3 4 5
+            4 5 6 7
+*/
+
+/*
+// Method 1
+int main()
+{
+    int n, i, j, count = 1;
+    cout<< "Enter the value of N: ";
+    cin >> n;
+    for(i=1; i<=n; i++){
+        count = i;
+        for(j=1; j<=i; j++){
+            cout << count << " ";
+            count++;
+        }
+        cout << endl; 
+    }
+}
+*/
+
+/*
+// Method 2
+int main()
+{
+    int n, i, j;
+    cout<< "Enter the value of N: ";
+    cin >> n;
+    for(i=1; i<=n; i++){
+        for(j=0; j<i; j++){
+            cout << i+j << " ";
+        }
+        cout << endl; 
+    }
+}
+*/
+
+/*
+     10)    1
+            2 1
+            3 2 1
+            4 3 2 1
+*/
+/*
+int main()
+{
+    int n, i, j;
+    cout << "Enter N: ";
+    cin >> n;
+
+    for (i=1; i<=n; i++){
+        for(j=i; j>0; j--){
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+}
+*/
+
+/*
+     11)    A A A
+            B B B
+            C C C
+*/
+/*
+int main() 
+{
+    int n, i, j;
+    char ch = 'A';
+    cout << "Enter N: ";
+    cin >> n;
+
+    for(i=1; i<=n; i++)
+    {
+        for (j=1; j<=n; j++){
+            cout << ch << " ";
+        }
+        ch++;
+        cout << endl;
+    }
+}
+*/
+
+/*
+     12)    A B C
+            A B C
+            A B C
+*/
+/*  
+int main() 
+{
+    int n, i, j;
+    char ch = 'A';
+    cout << "Enter N: ";
+    cin >> n;
+
+    for(i=1; i<=n; i++)
+    {
+        ch = 'A';
+        for (j=1; j<=n; j++){
+            cout << ch << " ";
+            ch++;
+        }
+        cout << endl;
+    }
+}
+*/
+/*
+     13)    A B C
+            D E F 
+            G H I
+*/
+
+/*
+int main() 
+{
+    int n, i, j;
+    char ch = 'A';
+    cout << "Enter N: ";
+    cin >> n;
+
+    for(i=1; i<=n; i++)
+    {
+        for (j=1; j<=n; j++){
+            cout << ch << " ";
+            ch++;
+        }
+        cout << endl;
+    }
+}
+*/
+
+/*
+     13)    A B C
+            B C D 
+            C D E
+*/
+
+int main()
+{
+    int n, i, j;
+    cout << "Enter N: ";
+    cin >> n;
+    char ch = 'A';
+    for(i=0; i<n; i++){
+        for(j=0; j<n; j++){
+            cout << (char)(ch + i + j) << " ";
+        }
+        cout << endl;
+    }
+}
+
