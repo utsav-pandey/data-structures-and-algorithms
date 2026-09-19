@@ -671,7 +671,7 @@ int main()
               1 2 3 2 1
             1 2 3 4 3 2 1
 */
-
+/*
 int main()
 {
     int n, i, j;
@@ -706,6 +706,7 @@ int main()
 
     }
 }
+*/
 
 // ================= Practice Question ===================
 /*
@@ -715,3 +716,32 @@ int main()
             1 2 * * * * * * 2 1
             1 * * * * * * * * 1
 */
+
+int main()
+{
+    int n, i, j;
+    cout << "Enter N: ";
+    cin >> n;
+
+    for(i=1; i<=n; i++)
+    {
+        // Printing the first half numbers
+        int vlaue = 0;
+        for(j=i; j<=n; j++){
+            vlaue ++;
+            cout << vlaue << " ";
+        }
+
+        // Printing the stars
+        for(j=1; j<= 2*(i-1); j++){
+            cout << "* ";
+        }
+
+        // Printing the 2nd half vlaue
+        for(j=i; j<=n; j++){
+            cout << vlaue << " ";
+            vlaue -- ;
+        }
+        cout << endl;
+    }
+}
