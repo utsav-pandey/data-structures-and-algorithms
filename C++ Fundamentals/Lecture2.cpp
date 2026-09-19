@@ -465,7 +465,7 @@ int main()
             B C D 
             C D E
 */
-
+/*
 int main()
 {
     int n, i, j;
@@ -475,6 +475,133 @@ int main()
     for(i=0; i<n; i++){
         for(j=0; j<n; j++){
             cout << (char)(ch + i + j) << " ";
+        }
+        cout << endl;
+    }
+}
+*/
+
+/*
+     14)    A 
+            B B
+            C C C
+*/
+/*
+int main()
+{
+    int n, i, j;
+    cout << "Enter N: ";
+    cin >> n;
+
+    for (i=1; i <= n; i++)
+    {
+        for(j=1; j<=i; j++)
+        {
+            cout << (char)('A'+i-1 )<< " ";
+        }
+        cout<<endl;
+    }
+}
+*/
+
+/*
+     15)    A 
+            B c
+            D E F
+*/
+/*
+int main()
+{
+    int n, i, j;
+    cout << "Enter N: ";
+    cin >> n;
+    char ch = 'A';
+    for (i=1; i <= n; i++)
+    {
+        for(j=1; j<=i; j++)
+        {
+            cout << ch << " ";
+            ch++ ;
+        }
+        cout<<endl;
+    }
+}
+*/
+
+/*
+     16)    A 
+            B c
+            C D E
+            D R F G H
+*/
+/*
+int main()
+{
+    int n, i, j;
+
+    cout << "Enter N: ";
+    cin >> n;
+
+    for(i=0; i<n; i++)
+    {
+        for(j=0; j<=i ; j++)
+        {
+            cout << (char)('A'+i+j)<< " ";
+
+        }
+        cout<<endl;
+    }
+}
+*/
+
+/*
+     17)    D 
+            C D
+            B C D
+            A B C D
+*/
+
+/*
+int main()
+{
+    int n, i, j;
+
+    cout << "Enter N: ";
+    cin >> n;
+    for(i=0; i<n; i++)
+    {
+        for(j=0; j<=i ; j++)
+        {
+            cout << (char)('A' + n - i + j - 1) << " ";
+
+        }
+        cout<<endl;
+    }
+}
+*/
+
+/*
+     18)          *
+                * *
+              * * *
+            * * * *
+*/
+
+int main()
+{
+    int n, i, j, space;
+    cout<< "Enter N: ";
+    cin >> n;
+
+    for(i=1; i<=n; i++){
+        space = n-i;
+        while(space > 0){
+            cout << "  ";
+            space -- ;
+        }
+        for(j=1; j<=i; j++)
+        {
+            cout<< "* ";
         }
         cout << endl;
     }
