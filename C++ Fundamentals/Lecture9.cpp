@@ -101,6 +101,17 @@ int linearSeardh(int arr[], int value, int size){
     return -1;
 }
 
+void reversArray (int arr[], int size){
+    int i =0 , j = size-1;
+    while (i<j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+        i++;
+        j--;
+    }
+}
+
 int main()
 {
 
@@ -124,11 +135,20 @@ int main()
 
     if(index == -1){
         cout << "The number is not present "<< endl;
-        return 0;
     }
 
-    cout << "The index of the number is : "<< index<< endl;
-    return 0;
+    if(index != -1)
+        cout << "The index of the number is : "<< index<< endl;
+
+    
+    cout << "Array before reversing is :-";
+    printArray(arr, n);
+
+    reversArray(arr, n);
+
+    cout << "Array after reversing is :- ";
+
+    printArray(arr, n);
 
 
 
