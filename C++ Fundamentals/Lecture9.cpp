@@ -112,6 +112,45 @@ void reversArray (int arr[], int size){
     }
 }
 
+void swapAlternate(int arr[], int size){
+    int temp;
+    for (int i = 0; i< size; i += 2){
+        temp = arr[i+1];
+        arr[i + 1] = arr[i];
+        arr[i] = temp;
+    }
+}
+
+bool count (int arr[],int value, int size){
+    int count = 0;
+    for(int i=0; i+1<size; i++){
+        if(arr[i] == value) count ++;
+        if(count == 2) return false;
+    }
+
+    return true;
+}
+
+void unique (int arr[], int size){
+    for (int i = 0; i<size; i++){
+        if(count(arr, arr[i], size)) cout << arr[i] << " ";
+    }
+}
+
+void duplicate(int arr[], int size){
+    for (int i = 0; i<size; i++){
+        if(!(count(arr, arr[i], size))) {
+            cout << arr[i] << " ";
+        }
+    }
+}
+
+void intersection (int arr[], int brr[], int size1, int size2);
+
+int pairSum(int arr[], int size);
+ 
+int tripletSum (int arr[], int size);
+
 int main()
 {
 
@@ -150,6 +189,15 @@ int main()
 
     printArray(arr, n);
 
+    swapAlternate(arr, n);
+    cout << "Array after alternet reversing is :-";
+    printArray(arr, n);
+
+    cout << "The Unique Elements are :- "<< endl;
+    unique(arr, n);
+
+    cout<< endl << "The duplicate elements are:- "<< endl ;
+    duplicate(arr, n);
 
 
 }
